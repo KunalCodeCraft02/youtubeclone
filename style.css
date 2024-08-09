@@ -1,0 +1,344 @@
+@font-face {
+    font-family: Roboto;
+    src: url(./fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: boldfont;
+    src: url(./fonts/l\ \(1\));
+}
+@font-face {
+    font-family: poppins;
+    src: url(./fonts/poppins/Poppins-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+*::-webkit-scrollbar{
+    display: none;
+}
+
+@media (max-width:600px) {
+    #navbar{
+        min-height: 10vw;
+        /* background-color: rgb(42, 222, 14); */
+        font-family: boldfont;
+        display: flex;
+        padding: 5vw 3vw;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .left{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 5vw;
+        font-family: poppins;
+    }
+    #navbar .left img{
+        width: 14vw;
+    }
+    #navbar .right{
+        display: flex;
+        gap: 20px;
+    }
+    .right i{
+        font-size: 8vw;
+    }
+    #slider{
+        min-height: 10vw;
+        width: 100%;
+        /* background-color: aqua; */
+        display: flex;
+        gap: 7px;
+        padding: 0 4vw;
+        font-family: poppins;
+        align-items: center;
+        overflow: auto;
+    }
+    #slider .box{
+        min-height: 40px;
+        min-width: 30%;
+        background-color: #333;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 3px;
+    }
+    .box i{
+        font-size: 7vw;
+      
+    }
+    .box1{
+        padding: 3vw 5vw;
+        background-color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 3px;
+    }
+    .box2{
+        padding: 2vw 5vw;
+        background-color: #fff;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 3px;
+    }
+    #content{
+        min-height: 50vh;
+        /* background-color: rgb(12, 174, 50); */
+        margin-top: 1.6vw;
+        font-family: poppins;
+    }
+    .addiscription{
+        padding: 3vw 3vw;
+    }
+    .adcontent{
+        min-height: 35vh;
+        background-color: #333;
+    }
+    .firstnavofdis{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .firstnavofdis .image{
+        height: 40px;
+        width: 40px;
+        background-color: red;
+        border-radius: 50%;
+    }
+    .disparagraph{
+        margin-left: 14%;
+    }
+    .disparagraph p{
+        font-size: 12px;
+        opacity: 0.8;
+    }
+    .buttons{
+        margin-top: 4vw;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+    .buttons button{
+        padding: 3.5vw 14vw;
+        outline: 0;
+        border: 0;
+        background-color: transparent;
+        border: 1px solid white;
+        border-radius: 30px;
+        font-size: 3vw;
+        font-family: poppins;
+    }
+    #btn1{
+        border: 1px solid white;
+        color: white;
+    }
+    #btn2{
+        border: 1px solid rgb(52, 115, 231);
+        background-color: rgb(16, 91, 231);
+    }
+    #videoContainer{
+        min-height: 30vh;
+        width: 100%;
+        padding: 3vw 0;
+        /* background-color: #333;s */
+        font-family: poppins;
+    }
+   
+    .thumbnail{
+        height: 35vh;
+        width: 100%;
+        background: #333;
+    }
+    .thumbnail img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .videoDisc{
+        display: flex;
+        gap: 4px;
+       justify-content: space-between;
+       margin-top: 2vw;
+       padding-left: 2vw;
+    }
+    .channellogo{
+        height: 50px;
+        width: 80px;
+        border-radius: 50%;
+        background-color: red;
+    }
+    .videoDisc p{
+        padding-left: 3vw;
+        width: 95%;
+    }
+    .textsec span{
+        font-size: 12px;
+        padding-left: 2vw;
+        opacity: 0.7;
+    }
+    #shortSection{
+        min-height: 60vh;
+        width: 100%;
+        font-family: poppins;
+        margin-top: 4vw;
+        padding: 0 3vw;
+    }
+    .shortitile{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .shortitile img{
+        width: 14vw;
+    }
+    .shortsboxes{
+        min-height: 60vh;
+        margin-top: 3vw;
+        /* background-color: red;  <div class="textdiv"></div> */
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px;
+    }
+    .shortbox{
+        height: 70vw;
+        width: 49%;
+        background-color: #333;
+        border-radius: 10px;
+        position: relative;
+    }
+    .textdiv{
+        position: absolute;
+        /* overflow: hidden; */
+       
+    }
+    .textdiv img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    
+    .textdiv p{
+        position: absolute;
+        /* z-index: 3; */
+        padding: 10px;
+        top: 70%;
+    }
+    #twoVideocon{
+        font-family: poppins;
+        margin-top: 4vw;
+    }
+    .videocon{
+        margin-top: 4vw;
+        font-family: poppins;
+    }
+    #postscroll{
+        min-height: 50vh;
+        width: 100%;
+        margin-top: 8vw;
+        /* background-color: rgb(12, 236, 72); */
+        font-family: poppins;
+        padding: 0 2vw;
+    }
+    .navimgandtext{
+        display: flex;
+        align-items: center;
+        gap: 3vw;
+        justify-content: space-evenly;
+    }
+    .imglogo{
+        height: 11vw;
+        width: 11vw;
+        border-radius: 50%;
+        background-color: red;
+    }
+    #downtext{
+        font-size: 4vw;
+        opacity: 0.7;
+    }
+    .navimgandtext button{
+        padding: 3vw 4vw;
+        background-color: rgba(128, 128, 128, 0.41);
+        color: white;
+        outline: 0;
+        border: 0;
+        border-radius: 30px;
+    }
+    .centerImg{
+        margin-top: 2vw;
+        height: 50vh;
+        width: 100%;
+        background-color: red;
+        border-radius: 10px;
+    }
+    .centertext{
+        padding: 1vw 2vw;
+    }
+    .bottomDisc{
+        margin-top: 5vw;
+        padding: 0 2vw;
+    }
+    .icons{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .icons i{
+        font-size: 7.4vw;
+    }
+    .icon1{
+        display: flex;
+        gap: 4vw;
+        align-items: center;
+    }
+    .icon2{
+        display: flex;
+        align-items: center;
+        gap: 5vw;
+    }
+    .bottomIcons{
+        min-height: 16vw;
+        width: 100%;
+        position: fixed;
+        top: 92%;
+        /* left: 38%; */
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0vw 2vw;
+    }
+    .iconofbottom{
+        display: flex;
+        align-items: center;
+        gap: 12vw;
+        justify-content: center;
+        font-size: 9vw;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    .circleDiv{
+        height: 10vw;
+        width: 10vw;
+        border-radius: 50%;
+        background-color: grey;
+    }
+   
+
+
+}

@@ -1,0 +1,219 @@
+@font-face {
+    font-family: Roboto;
+    src: url(./fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: boldfont;
+    src: url(./fonts/l\ \(1\));
+}
+@font-face {
+    font-family: poppins;
+    src: url(./fonts/poppins/Poppins-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+*::-webkit-scrollbar{
+    display: none;
+}
+
+@media (max-width:600px) {
+    #nav{
+        min-height: 15vw;
+        width: 100%;
+        /* background-color: #333; */
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        padding: 6vw 3vw;
+    }
+    .icon{
+        font-size: 7vw;
+        display: flex;
+        gap: 7svw;
+    }
+    #profile{
+        min-height: 35vw;
+        width: 100%;
+        /* background-color: rgb(56, 50, 41); */
+        /* margin-top: 5vw; */
+        font-family: poppins;
+        display: flex;
+        align-items: center;
+        gap: 3vw;
+        padding: 0 3vw;
+    }
+    .logo{
+        height: 25vw;
+        width: 25vw;
+        background: red;
+        border-radius: 50%;
+    }
+    #span1{
+        opacity: 0.9;
+    }
+    #spna2{
+        opacity: 0.7;
+    }
+    #sliderdiv{
+        min-height: 10vw;
+        width: 100%;
+        /* background-color: antiquewhite; */
+        font-family: poppins;
+        padding-left: 1vw;
+        margin-top: 3vw;
+
+    }
+    .slidebtns{
+        display: flex;
+        gap: 2vw;
+        overflow: auto;
+    }
+    #sliderdiv button{
+        outline: 0;
+        border: 0;
+        padding: 3vw 3vw;
+        background-color: rgba(128, 128, 128, 0.358);
+        color: white;
+        border-radius: 4vw;
+
+    }
+    #historyviwed{
+        min-height: 8vw;
+        width: 100%;
+        margin-top: 4vw;
+        padding: 0 4vw;
+        font-family: poppins;
+    }
+    .historynav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .historynav button{
+        outline: 0;
+        border: 0;
+        padding: 2vw 4vw;
+        background: rgba(128, 128, 128, 0.291);
+        color: white;
+        border-radius: 5vw;
+    }
+    .videosdivs{
+        min-height: 20vw;
+        width: 100%;
+        /* background-color: aquamarine; */
+        margin-top: 3vw;
+        display: flex;
+        gap: 15px;
+        overflow: auto;
+        padding: 3vw 2vw;
+        flex-wrap: wrap;
+    }
+    .videoDiv{
+        min-height: 25vw;
+        width: 47%;
+        /* background-color: red; */
+    }
+    .videoImg{
+        min-height: 25vw;
+        width: 100%;
+        background-color: rebeccapurple;
+    }
+    .videoDiv p{
+        width: 100%;
+        font-size: 13px;
+        padding-top: 2vw;
+        font-family: poppins;
+    }
+    
+    .navplaylist{
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        padding: 3vw 3vw;
+        font-family: poppins;
+
+    }
+    .navplaylist button{
+        outline: 0;
+        border: 0;
+        padding: 2vw 4vw;
+        background: rgba(128, 128, 128, 0.291);
+        color: white;
+        border-radius: 5vw;
+    }
+    .playvideos{
+        display: flex;
+        gap: 4vw;
+        padding: 0 2.5vw;
+    }
+    #bottom{
+        margin-top: 5vw;
+        min-height: 50vh;
+        width: 100%;
+        /* background-color: rgb(221, 217, 212); */
+        padding: 0 3vw;
+        font-family: poppins;
+    }
+    #bottom hr{
+        margin-top: 5vw;
+    }
+    .lists{
+        padding: 10px;
+    }
+    .lists h4{
+        margin-top: 9vw;
+        padding-left: 3vw;
+        font-weight: 100;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .lists span{
+        padding-left: 12vw;
+        opacity: 0.8;
+        font-size: 12px;
+    }
+    h4 i{
+        font-size: 6vw;
+    }
+    .bottomIcons{
+        min-height: 16vw;
+        width: 100%;
+        position: fixed;
+        top: 92%;
+        /* left: 38%; */
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0vw 2vw;
+    }
+    .iconofbottom{
+        display: flex;
+        align-items: center;
+        gap: 12vw;
+        justify-content: center;
+        font-size: 9vw;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    .circleDiv{
+        height: 10vw;
+        width: 10vw;
+        border-radius: 50%;
+        background-color: grey;
+    }
+   
+}
